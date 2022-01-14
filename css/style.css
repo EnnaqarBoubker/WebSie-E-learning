@@ -1,7 +1,7 @@
 .container-fluid{
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%); 
 }
-.border-start, .tilt{
+ .border-start, .tilt {           /*title for dashbord */
     border-left: 6px solid #00C1FE !important;
 }
 .rounded-3{
@@ -10,3 +10,16 @@
 .fs-6{
     font-size: 11px !important;
 }
+
+/* dashbord */
+.bg-dark {
+    background: #FAFFC1 !important;
+}
+
+
+
+
+
+
+
+
