@@ -19,8 +19,27 @@
     color: #C4C4C4 !important;
 }
 
-
-
+.bg-color {
+    background: #F0F9FF;
+}
+.colry {
+    color: #74C1ED;
+}
+.bg-color-one {
+    background: #FEF6FB;
+}
+.colry-one {
+    color: #EE95C5;
+}
+.bg-color-two {
+    background: #FEFBEC;
+}
+.colry-two {
+    color: #00C1FE;
+}
+.bg-color-three {
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+}
 
 
 
