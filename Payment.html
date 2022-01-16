@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>payment</title>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark ">
+                <div
+                    class="d-flex flex-column align-items-center align-items-center px-3 pt-2 text-white min-vh-100 overflow-hidden">
+                    <a href="#"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline tilt ps-3 fw-bold text-dark">E-classe</span>
+                    </a>
+                    <div class="d-flex flex-column align-items-center align-items-center text-dark ">
+                        <img class="rounded-circle w-75" src="./image/youcode.png" alt="photo">
+                        <p class="fw-bold pt-2 m-0">Admin name</p>
+                        <a class="pb-3 text-decoration-none fs-6" href="#">Admin</a>
+                    </div>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fa fa-home" aria-hidden="true"></i> <span
+                                    class="ms-1 d-none d-sm-inline ps-2">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <span class="ms-1 d-none d-sm-inline ps-3">Course</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i></i>
+                                <span class="ms-1 d-none d-sm-inline ps-1">Students</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span class="ms-1 d-none d-sm-inline ps-2">Payment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                                <span class="ms-1 d-none d-sm-inline ps-2">Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                                <span class="ms-1 d-none d-sm-inline ps-2">Settings</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span class="ms-1 d-none d-sm-inline ps-2">Settings</span> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 bg-white position-sticky">
+                <div class="our-webcoderskull padding-lg">
+                    <div class="">
+                        <div class=" d-flex justify-content-between align-items-center w-100">
+                            <div class="text-info fs-5">
+                                <i class="fa fa-caret-square-o-left" aria-hidden="true"></i>
+                            </div>
+                            <div id="custom-search-input" class="d-flex justify-content-end align-items-center me-4">
+                                <div class="input-group col-md-12 me-2 border-1 ">
+                                    <input type="text" class="  search-query form-control border-end-0"
+                                        placeholder="Search" />
+                                    <span class="input-group-btn">
+                                        <button class="btn border border-start-0" type="button">
+                                            <span class=" glyphicon glyphicon-search"><i class="fa fa-search"
+                                                    aria-hidden="true"></i></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <i class="fa fa-bell-o text-info" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container mt-3 bg-withe vh-80">
+                            <div class="row">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div
+                                        class="col col-xs-6 d-flex justify-content-between align-items-center mt-4 me-3">
+                                        <p class="panel-title fw-bolder fs-3">Payment Details</p>
+                                    </div>
+                                    <div class="col col-xs-6 text-right d-flex justify-content-end align-items-center">
+                                        <div class=" row fs-5 h-25">
+                                            <i class="fa fa-sort-asc " aria-hidden="true"></i>
+                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" vh-100">
+                                    <table class="table overflow-auto table-borderless">
+                                        <thead class="text-color fs-6 fw-normal">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Payment Schedule</th>
+                                                <th>Bill Number</th>
+                                                <th>Amount Paid</th>
+                                                <th>Balance amount</th>
+                                                <th>Date</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="fs-6">
+                                            <tr class="bg-withe">
+                                                <td>Username</td>
+                                                <td>First</td>
+                                                <td>00012223</td>
+                                                <td>DHS 100,000</td>
+                                                <td>DHS 500,000</td>
+                                                <td>05-Jan, 2022</td>
+                                                <td class="fs-5">
+                                                    <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>First</td>
+                                                <td>00012223</td>
+                                                <td>DHS 100,000</td>
+                                                <td>DHS 500,000</td>
+                                                <td>05-Jan, 2022</td>
+                                                <td class="fs-5">
+                                                    <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./css/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
