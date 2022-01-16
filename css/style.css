@@ -34,26 +34,36 @@
 .bg-color-two {
     background: #FEFBEC;
 }
-.colry-two {
+.colry-two, .add, .delete {
     color: #00C1FE;
 }
 .bg-color-three {
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
 }
+
+/* student Style */
+
 .fa-sort-up:before, .fa-sort-asc:before {
     content: "\f0de";
     position: relative;
-    top: 10px;
+    top: 8px;
     left: 20px;
     color: #00C1FE;
 }
 .fa-sort-down:before, .fa-sort-desc:before {
     content: "\f0dd";
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     left: 20px;
     color: #00C1FE;
 }
+.w-50{
+    width: 3rem !important;
+}
 
-
-
+.text-color {
+    color: #ACACAC;
+}
+.fw-normal {
+    font-weight: 100;
+}
