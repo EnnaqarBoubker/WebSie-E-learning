@@ -40,7 +40,20 @@
 .bg-color-three {
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
 }
-
+.fa-sort-up:before, .fa-sort-asc:before {
+    content: "\f0de";
+    position: relative;
+    top: 10px;
+    left: 20px;
+    color: #00C1FE;
+}
+.fa-sort-down:before, .fa-sort-desc:before {
+    content: "\f0dd";
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    color: #00C1FE;
+}
 
 
 
