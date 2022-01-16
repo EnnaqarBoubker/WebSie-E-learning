@@ -40,7 +40,9 @@
 .bg-color-three {
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
 }
-
+.input-group{
+    border: 1px solid #E5E5E5 !important;
+}
 /* student Style */
 
 .bg-withe{
@@ -60,12 +62,16 @@
     left: 20px;
     color: #00C1FE;
 }
-.vh-100{
+.height{
     height: 65vh !important;
+}
+.fa-caret-square-o-left {
+    margin-left: 10px !important;
 }
 .table{
     border-top: 2px solid #E5E5E5 !important;
 }
+
 .w-50{
     width: 3rem !important;
 }
