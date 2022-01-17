@@ -63,7 +63,7 @@
     color: #00C1FE;
 }
 .height{
-    height: 65vh !important;
+    height: 70vh !important;
 }
 .fa-caret-square-o-left {
     margin-left: 10px !important;
@@ -81,4 +81,18 @@
 }
 .fw-normal {
     font-weight: 100;
+}
+
+/* .selected:link {
+    background-color: #00C1FE !important;
+}
+
+.nav-link {
+    color: #000 !important;
+    text-align: center;
+    margin-left: -22px !important;
+    width: 250% !important;
+} */
+.nav-link {
+    color: #000 !important;
 }
