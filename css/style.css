@@ -88,11 +88,15 @@
 }
 
 .nav-link {
+
     color: #000 !important;
     text-align: center;
-    margin-left: -22px !important;
+    
     width: 250% !important;
 } */
 .nav-link {
     color: #000 !important;
+}
+.item {
+    margin-top: 6rem !important;
 }
