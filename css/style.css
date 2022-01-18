@@ -1,7 +1,7 @@
 .container-fluid{
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%); 
 }
- .border-start, .tilt {           /*title for dashbord */
+ .border-start {           /*title for dashbord */
     border-left: 6px solid #00C1FE !important;
 }
 .rounded-3{
@@ -63,7 +63,7 @@
     color: #00C1FE;
 }
 .height{
-    height: 63vh !important;
+    height: 70vh !important;
 }
 .fa-caret-square-o-left {
     margin-left: 10px !important;
