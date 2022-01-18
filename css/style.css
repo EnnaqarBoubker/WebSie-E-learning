@@ -82,21 +82,9 @@
 .fw-normal {
     font-weight: 100;
 }
-
-/* .selected:link {
-    background-color: #00C1FE !important;
-}
-
-.nav-link {
-
-    color: #000 !important;
-    text-align: center;
-    
-    width: 250% !important;
-} */
 .nav-link {
     color: #000 !important;
 }
-.padin2 {
-    padding-bottom: 4rem !important;
+.adin {
+    height: 90vh !important;
 }
