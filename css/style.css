@@ -63,7 +63,7 @@
     color: #00C1FE;
 }
 .height{
-    height: 70vh !important;
+    height: 72.8vh !important;
 }
 .fa-caret-square-o-left {
     margin-left: 10px !important;
@@ -84,4 +84,7 @@
 }
 .nav-link {
     color: #000 !important;
+}
+.width {
+    min-height: 90vh !important;
 }

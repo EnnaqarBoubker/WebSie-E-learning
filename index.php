@@ -34,7 +34,7 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">remember me</label>
                     </div>
-                    <a class="btn btn-lg btn-info w-100 text-white" href="./dashbord.html">SIGNIN</a>
+                    <a class="btn btn-lg btn-info w-100 text-white" href="./dashboard.php">SIGNIN</a>
                     <p class="text-center fs-6 pt-3">Forgot your password? <a href="#">Reset Password</a></p>
                 </form>
             </div>

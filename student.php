@@ -8,91 +8,21 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>dashboard</title>
+    <title>Home</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark ">
-                <div class="d-flex flex-column align-items-center px-3 pt-2 text-white min-vh-100">
-                    <a href="./dashbord.html"
-                        class="d-flex align-items-center  pb-lg-4 mb-md-0 pb-5 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline border-start ps-3 fw-bold text-dark">E-classe</span>
-                        <span class="fs-5 d-inline d-sm-none d-lg-none border-start ps-2 fw-bold text-dark">E-C</span>
-                    </a>
-                    <div class="d-flex flex-column align-items-center text-dark d-sm-inline d-none text-center">
-                        <img class="rounded-circle w-75" src="./image/youcode.png" alt="photo">
-                        <p class="fw-bold pt-2 m-0">Admin name</p>
-                        <a class="pb-3 text-decoration-none fs-6" href="#">Admin</a>
-                    </div>
-                    <ul class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
-                        <li>
-                            <a href="./dashbord.html" class="nav-link align-middle px-0">
-                                <i class="fa fa-home" aria-hidden="true"></i> <span
-                                    class="ms-1 d-none d-sm-inline ps-2">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                                <span class="ms-1 d-none d-sm-inline ps-3">Course</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class=" nav-link px-0 align-middle">
-                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                <span class="ms-1 d-none d-sm-inline ps-1">Students</span></a>
-                        </li>
-                        <li>
-                            <a href="./payment.html" class="nav-link px-0 align-middle ">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                <span class="ms-1 d-none d-sm-inline ps-2">Payment</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fa fa-flag" aria-hidden="true"></i>
-                                <span class="ms-1 d-none d-sm-inline ps-2">Report</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fa fa-cogs" aria-hidden="true"></i>
-                                <span class="ms-1 d-none d-sm-inline ps-2">Settings</span> </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div>
-                        <a href="./index.html" class="nav-link px-0 align-middle">
-                            <span class="me-2 d-none d-sm-inline ps-2">Logout</span>
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col py-3 bg-white">
-                <div class=" d-flex justify-content-between align-items-center ">
-                    <div class="text-info fs-5">
-                        <i class="fa fa-caret-square-o-left" aria-hidden="true"></i>
-                    </div>
-                    <div id="custom-search-input" class="d-flex justify-content-end align-items-center me-4">
-                        <div class="input-group rounded-2 col-md-12 me-2 border-1 ">
-                            <input type="text" class="d-none d-md-inline d-lg-inline shadow-none search-query form-control border-0" placeholder="Search" />
-                            <span class="input-group-btn">
-                                <button class="btn shadow-none border border-0" type="button">
-                                    <span class=" glyphicon glyphicon-search"><i class="fa fa-search text-info" aria-hidden="true"></i></span>
-                                </button>
-                            </span>
-                        </div>
-                        <i class="fa fa-bell-o text-info" aria-hidden="true"></i>
-                    </div>
-                </div>
+
+            
+
+
                 <div class="container mt-3 bg-withe">
                     <div class="row">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="col col-xs-6 d-flex justify-content-between align-items-center mt-4 me-3">
-                                <p class="panel-title fw-bolder fs-3">Students List</p>
+                                <p class="panel-title fw-bolder fs-5">Students List</p>
                             </div>
                             <div class="col col-xs-6 text-right d-flex justify-content-end align-items-center">
                                 <div class=" row fs-5 h-25">
@@ -121,7 +51,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="fs-6">
-                                    <tr class="bg-withe">
+                                    <tr class="bg-withe align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -133,7 +63,7 @@
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -145,7 +75,7 @@
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
-                                    <tr class="bg-withe">
+                                    <tr class="bg-withe align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -157,7 +87,7 @@
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -169,7 +99,7 @@
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
-                                    <tr class="bg-withe">
+                                    <tr class="bg-withe align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -182,7 +112,7 @@
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
