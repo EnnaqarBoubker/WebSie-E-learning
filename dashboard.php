@@ -15,7 +15,10 @@
     <div class="container-fluid">
         <div class="row flex-nowrap">
 
-            
+            <?php 
+                include 'breif-php/sidebar.php'; 
+                include 'breif-php/nav.php';
+            ?>
 
                     <ul class="row list-unstyled mt-2 mt-lg-4 d-flex justify-content-evenly">
                         <li class=" mb-2 col-md-6 mb-md-2 col-lg-3">

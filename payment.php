@@ -15,7 +15,10 @@
     <div class="container-fluid">
         <div class="row flex-nowrap">
 
-            
+            <?php
+                include 'breif-php/sidebar.php'; 
+                include 'breif-php/nav.php';
+            ?>
 
 
 
