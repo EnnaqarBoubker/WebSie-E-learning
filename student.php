@@ -1,3 +1,21 @@
+<?php
+    $students = array (
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+    );
+
+   
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +73,29 @@
                                     </tr>
                                 </thead>
                                 <tbody class="fs-6">
-                                    <tr class="bg-withe align-middle">
+                                    <?php  
+                                            foreach ($students as $student) {
+                                    ?> 
+
+                                        <tr class="bg-withe">
+                                            <!-- <td class="align-middle"><img class="w-50 rounded-1" src="./image/ <?php echo $student ['Name']; ?>" alt="user"></td> -->
+                                            <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
+                                            <td class="align-middle"><?php echo $student ['Name']; ?></td>
+                                            <td class="align-middle"><?php echo $student ['E-mail']; ?></td>
+                                            <td class="align-middle"><?php echo $student ['Phone']; ?></td>
+                                            <td class="align-middle"><?php echo $student ['Enroll Number']; ?></td>
+                                            <td class="align-middle"><?php echo $student ['Date of admission']; ?></td>
+                                            <td class="align-middle">
+                                                <a class="fs-5 add text-decoration-none me-2" title="Add"> <?php echo $student ['icon1']; ?></a>
+                                                <a class="fs-5 delete text-decoration-none" title="Delete"><?php echo $student ['icon2']; ?></a>
+                                            </td>
+                                            
+                                        </tr> 
+                                    <?php  } ?>
+
+
+
+                                    <!-- <tr class="bg-withe align-middle">
                                         <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                         <td class="align-middle">Username</td>
                                         <td class="align-middle">user@email.com</td>
@@ -127,7 +167,7 @@
                                             <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                             <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>

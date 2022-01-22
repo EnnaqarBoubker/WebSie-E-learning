@@ -1,14 +1,14 @@
 <?php
     $payment = array (
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
     );
 
    
@@ -35,8 +35,6 @@
                 include 'breif-php/sidebar.php'; 
                 include 'breif-php/nav.php';
             ?>
-
-
 
                 <div class="container mt-3 bg-withe">
                     <div class="row ">
@@ -76,143 +74,10 @@
                                         <td class="align-middle"><?php echo $P ['Amount Paid']; ?></td>
                                         <td class="align-middle"><?php echo $P ['Balance amount']; ?></td>
                                         <td class="align-middle"><?php echo $P ['Date']; ?></td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                        </td>
+                                        <td class="align-middle"><a class="fs-5 text-decoration-none" title="See"><?php echo $P ['icon']; ?></a></td>
                                     </tr> 
                                     <?php  } ?>
-                                   <!-- <tr>
-                                        <td class="align-middle">Userate</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe">
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe">
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe">
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe">
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe">
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">First</td>
-                                        <td class="align-middle">00012223</td>
-                                        <td class="align-middle">DHS 100,000</td>
-                                        <td class="align-middle">DHS 500,000</td>
-                                        <td class="align-middle">05-Jan, 2022</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="see"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr> -->
+                                    
                                 </tbody>
                             </table>
                         </div>

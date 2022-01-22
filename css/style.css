@@ -48,7 +48,7 @@
 .bg-withe{
     background: #e5e5e53d !important;
 }
-.fa-sort-up:before, .fa-sort-asc:before {
+/* .fa-sort-up:before, .fa-sort-asc:before {
     content: "\f0de";
     position: relative;
     top: 8px;
@@ -61,7 +61,7 @@
     bottom: 8px;
     left: 20px;
     color: #00C1FE;
-}
+} */
 .height{
     height: 72.8vh !important;
 }
