@@ -73,6 +73,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="fs-6">
+                                    
                                     <?php  
                                             foreach ($students as $student) {
                                     ?> 
@@ -93,81 +94,6 @@
                                         </tr> 
                                     <?php  } ?>
 
-
-
-                                    <!-- <tr class="bg-withe align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td class="align-middle">08-Dec, 2021</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td class="align-middle">08-Dec, 2021</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td class="align-middle">08-Dec, 2021</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td class="align-middle">08-Dec, 2021</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-withe align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td>08-Dec, 2021</td>
-                                        <td class="fs-5">
-                                            <a class="add text-decoration-none me-2" title="Add">
-                                                <i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr class="align-middle">
-                                        <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
-                                        <td class="align-middle">Username</td>
-                                        <td class="align-middle">user@email.com</td>
-                                        <td class="align-middle">7305477760</td>
-                                        <td class="align-middle">1234567305477760</td>
-                                        <td class="align-middle">08-Dec, 2021</td>
-                                        <td class="fs-5 align-middle">
-                                            <a class="add text-decoration-none me-2" title="Add"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a class="delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
