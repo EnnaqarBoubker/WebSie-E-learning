@@ -1,14 +1,14 @@
 <?php
     $payments = array (
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
     );
 
    $icon = <<< ICON
@@ -54,10 +54,10 @@
 
                                     <tr class="bg-withe">
                                         <td class="align-middle"><?php echo $payment ['Name']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Payment Schedule']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Bill Number']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Amount Paid']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Balance amount']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Schedule']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Number']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['paid']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['amount']; ?></td>
                                         <td class="align-middle"><?php echo $payment ['Date']; ?></td>
                                         <td class="align-middle"><?php echo $icon ?></td>
                                     </tr> 

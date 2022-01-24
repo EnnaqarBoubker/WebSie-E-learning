@@ -1,14 +1,14 @@
 <?php
     $students = array (
-        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Ahemed' , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Sabir'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Taib'   , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Maher'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
-        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Ahemed' , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Sabir'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Taib'   , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Maher'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
     );
 
     $icon = <<<ICON
