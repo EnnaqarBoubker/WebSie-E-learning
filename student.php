@@ -1,14 +1,14 @@
 <?php
     $students = array (
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
-        array('img' => 'youcode.png', 'Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
+        array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Enroll Number' => '1234567305477760', 'Date of admission' => '08-Dec, 2021', 'icon1' => '<i class="fa fa-pencil" aria-hidden="true"></i>', 'icon2' => '<i class="fa fa-trash" aria-hidden="true"></i>'),
     );
 
    
@@ -79,7 +79,6 @@
                                     ?> 
 
                                         <tr class="bg-withe">
-                                            <!-- <td class="align-middle"><img class="w-50 rounded-1" src="./image/ <?php echo $student ['Name']; ?>" alt="user"></td> -->
                                             <td><img class="w-50 rounded-1" src="./image/youcode.png" alt="user"></td>
                                             <td class="align-middle"><?php echo $student ['Name']; ?></td>
                                             <td class="align-middle"><?php echo $student ['E-mail']; ?></td>
