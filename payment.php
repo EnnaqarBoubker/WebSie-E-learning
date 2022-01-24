@@ -14,23 +14,6 @@
    
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-
             <?php
                 include 'breif-php/sidebar.php'; 
                 include 'breif-php/nav.php';
@@ -76,7 +59,8 @@
                                         <td class="align-middle"><?php echo $P ['Date']; ?></td>
                                         <td class="align-middle"><a class="fs-5 text-decoration-none" title="See"><?php echo $P ['icon']; ?></a></td>
                                     </tr> 
-                                    <?php  } ?>
+                                    
+                                    <?php  };?>
                                     
                                 </tbody>
                             </table>
