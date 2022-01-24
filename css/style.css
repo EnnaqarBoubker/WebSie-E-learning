@@ -95,7 +95,7 @@
 }
 /* sidebare */
 .selected {
-  width: 8rem;
+  
   border-radius: 8px;
 }
 .selected:hover {

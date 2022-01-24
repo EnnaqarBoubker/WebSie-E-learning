@@ -1,17 +1,19 @@
 <?php
-    $payment = array (
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
-        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022', 'icon' => '<i class="fa fa-eye" aria-hidden="true"></i>'),
+    $payments = array (
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+        array('Name' => 'Usename', 'Payment Schedule' => 'First', 'Bill Number' => '00012223', 'Amount Paid' => 'DHS 100,000', 'Balance amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
     );
 
-   
+   $icon = <<< ICON
+       <a class="fs-5 text-decoration-none" title="See"><i class="fa fa-eye" aria-hidden="true"></i></a>
+       ICON;
 ?>
 
             <?php
@@ -42,22 +44,22 @@
                                         <th>Amount Paid</th>
                                         <th>Balance amount</th>
                                         <th>Date</th>
-                                        <th></th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody class="fs-6">
                                         <?php  
-                                            foreach ($payment as $P) {
+                                            foreach ($payments as $payment) {
                                         ?> 
 
                                     <tr class="bg-withe">
-                                        <td class="align-middle"><?php echo $P ['Name']; ?></td>
-                                        <td class="align-middle"><?php echo $P ['Payment Schedule']; ?></td>
-                                        <td class="align-middle"><?php echo $P ['Bill Number']; ?></td>
-                                        <td class="align-middle"><?php echo $P ['Amount Paid']; ?></td>
-                                        <td class="align-middle"><?php echo $P ['Balance amount']; ?></td>
-                                        <td class="align-middle"><?php echo $P ['Date']; ?></td>
-                                        <td class="align-middle"><a class="fs-5 text-decoration-none" title="See"><?php echo $P ['icon']; ?></a></td>
+                                        <td class="align-middle"><?php echo $payment ['Name']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Payment Schedule']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Bill Number']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Amount Paid']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Balance amount']; ?></td>
+                                        <td class="align-middle"><?php echo $payment ['Date']; ?></td>
+                                        <td class="align-middle"><?php echo $icon ?></td>
                                     </tr> 
                                     
                                     <?php  };?>
