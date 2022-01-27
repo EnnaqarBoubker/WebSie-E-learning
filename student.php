@@ -19,9 +19,9 @@
         ICON;
    
 
-            
-                include 'breif-php/sidebar.php'; 
-                include 'breif-php/nav.php';
+                include './breif-php/head.php';
+                include './breif-php/sidebar.php'; 
+                include './breif-php/header.php';
 ?>
 
 
@@ -60,6 +60,11 @@
                                 <tbody class="fs-6">
 
                                     <?php 
+
+                                        // $students = file_get_contents("student.json");
+                                        // $students = json_decode($students);
+
+
                                         foreach($students as $student) :
                                             echo "<tr class=\"bg-withe\">";
                                             echo "<td><img class=\"w-50 rounded-1\" src=\"./image/youcode.png\" alt=\"user\"></td>";
@@ -79,7 +84,6 @@
         </div>
     </div>
 
-    <script src="./css/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <?php
+        include './breif-php/footre.php';
+   ?>

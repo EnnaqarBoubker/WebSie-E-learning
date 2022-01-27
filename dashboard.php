@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
-</head>
+    include './breif-php/head.php';
 
-<body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
+?>
+
 
             <?php 
                 include 'breif-php/sidebar.php'; 
-                include 'breif-php/nav.php';
+                include 'breif-php/header.php';
             ?>
 
                     <ul class="row list-unstyled mt-2 mt-lg-4 d-flex justify-content-evenly">
@@ -66,13 +56,11 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="./css/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <?php
+        include './breif-php/footre.php';
+   ?>

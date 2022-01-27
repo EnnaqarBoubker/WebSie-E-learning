@@ -12,13 +12,16 @@
     );
 
    $icon = <<< ICON
-       <a class="fs-5 text-decoration-none" title="See"><i class="fa fa-eye" aria-hidden="true"></i></a>
-       ICON;
+       <a class="fs-5 text-decoration-none" title="See">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+       </a>
+    ICON;
 ?>
 
             <?php
-                include 'breif-php/sidebar.php'; 
-                include 'breif-php/nav.php';
+                include './breif-php/head.php';
+                include './breif-php/sidebar.php'; 
+                include './breif-php/header.php';
             ?>
 
                 <div class="container mt-3 bg-withe">
@@ -73,7 +76,6 @@
         </div>
     </div>
 
-    <script src="./css/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <?php
+        include './breif-php/footre.php';
+   ?>

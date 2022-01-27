@@ -1,0 +1,23 @@
+[
+    {
+        "name"    : "Ahmed",
+        "e-mail"  : "user@email.com",
+        "phone"   : 689519190,
+        "number"  : 1234566678990,
+        "admision": "08 Dec 2021"
+    },
+    {
+        "name"    : "wasim",
+        "e-mail"  : "user@email.com",
+        "phone"   : null,
+        "number"  : 1234566678990,
+        "admision": "08_Dec, 2021"
+    },
+    {
+        "name"    : "Ahmed",
+        "e-mail"  : "user@email.com",
+        "phone"   : false,
+        "number"  : 1234566678990,
+        "admision": "08_Dec, 2021"
+    }
+]

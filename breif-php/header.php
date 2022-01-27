@@ -10,7 +10,7 @@
             </div>
             <div id="custom-search-input" class="d-flex justify-content-end align-items-center me-4">
                 <div class="input-group rounded-2 col-md-12 me-2 ">
-                    <input type="text" class="d-none d-md-inline d-lg-inline shadow-none search-query form-control border-0" placeholder="Search" />
+                    <input type="text" class="d-none d-md-inline d-lg-inline shadow-none form-control border-0" placeholder="Search" />
                     <span class="input-group-btn">
                         <button class="btn border border-0 shadow-none" type="button">
                             <span class=" glyphicon glyphicon-search"><i class="fa fa-search text-info" aria-hidden="true"></i></span>

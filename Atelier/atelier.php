@@ -1,4 +1,4 @@
-<?php
+ <?php
     //exercice 1 instalation server in windows.
 
 
