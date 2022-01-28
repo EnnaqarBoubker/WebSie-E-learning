@@ -52,7 +52,7 @@
                                 </thead>
                                 <tbody class="fs-6">
                                         <?php  
-                                            foreach ($payments as $payment) {
+                                            foreach ($payments as $payment) :
                                         ?> 
 
                                     <tr class="bg-withe">
@@ -65,7 +65,7 @@
                                         <td class="align-middle"><?php echo $icon ?></td>
                                     </tr> 
                                     
-                                    <?php  };?>
+                                    <?php  endforeach;?>
                                     
                                 </tbody>
                             </table>

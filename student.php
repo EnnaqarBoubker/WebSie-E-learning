@@ -17,7 +17,12 @@
         <a class="fs-5 delete text-decoration-none" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
         </td>
         ICON;
-   
+        
+    $image = <<<IMAGE
+        <img class="w-50 rounded-1" src="./image/youcode.png" alt="user">
+        IMAGE;
+
+
 
                 include './breif-php/head.php';
                 include './breif-php/sidebar.php'; 
@@ -38,8 +43,7 @@
                                 </div>
                                 <button type="button"
                                     class="btn d-none d-lg-inline btn-sm btn-primary btn-create p-2">ADD NEW STUDENT</button>
-                                <button type="button"
-                                    class="btn d-inline d-lg-none d-md-none btn-sm btn-primary btn-create p-2">
+                                <button type="button" class="btn d-inline d-lg-none d-md-none btn-sm btn-primary btn-create p-2">
                                     <i class="fa fa-user-plus" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -64,16 +68,21 @@
                                         // $students = file_get_contents("student.json");
                                         // $students = json_decode($students);
 
+                                        foreach ($students as $student) :
+                                           
+                                    ?> 
 
-                                        foreach($students as $student) :
-                                            echo "<tr class=\"bg-withe\">";
-                                            echo "<td><img class=\"w-50 rounded-1\" src=\"./image/youcode.png\" alt=\"user\"></td>";
-                                            foreach($student as $key => $val) :
-                                                echo "<td class=\"align-middle\"> {$val} </td>";
-                                            endforeach;
-                                            echo $icon;
-                                        endforeach;
-                                    ?>
+                                <tr class="bg-withe">
+                                    <td class="align-middle"><?php echo $image ?></td>
+                                    <td class="align-middle"><?php echo $student['Name']; ?></td>
+                                    <td class="align-middle"><?php echo $student['E-mail']; ?></td>
+                                    <td class="align-middle"><?php echo $student['Phone']; ?></td>
+                                    <td class="align-middle"><?php echo $student['Number']; ?></td>
+                                    <td class="align-middle"><?php echo $student['admission']; ?></td>
+                                    <td class="align-middle"><?php echo $icon ?></td>
+                                </tr> 
+                                
+                                <?php  endforeach;?>
 
                                 </tbody>
                             </table>
