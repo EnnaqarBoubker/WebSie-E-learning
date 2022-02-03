@@ -98,6 +98,6 @@
   
   border-radius: 8px;
 }
-.selected:hover {
+.selected:active {
   background: #00c1fe;
 }

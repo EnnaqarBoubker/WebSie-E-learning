@@ -1,4 +1,5 @@
 <?php 
+
     $sidebar = <<< SIDEBAR
             
             <body>
@@ -61,6 +62,8 @@
                     </div>
                 </div>
             </div>
-        SIDEBAR;
+            SIDEBAR;
         
         echo $sidebar;
+    
+        ?>

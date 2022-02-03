@@ -2,7 +2,7 @@
 <?php 
     $sidebar = <<< header
 
-<div class="col py-1 py-lg-3 bg-white">
+    <div class="col py-1 py-lg-3 bg-white">
     <div class="our-webcoderskull padding-lg">
         <div class=" d-flex justify-content-between align-items-center w-100">
             <div class="text-info fs-5">

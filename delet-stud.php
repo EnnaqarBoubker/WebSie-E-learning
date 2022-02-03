@@ -1,0 +1,15 @@
+<?php
+    $index = $_GET['index'];
+
+    $data = file_get_contents('student.json');
+    $data = json_decode($data, true);
+
+    unset($data[$index]);
+    sort($data);
+
+    //encode back to json
+	$data = json_encode($data, JSON_PRETTY_PRINT);
+	file_put_contents('student.json', $data);
+
+	header('location: student.php');
+?>
