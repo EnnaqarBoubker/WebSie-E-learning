@@ -1,24 +1,26 @@
 <?php
-    $payments = array (
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-        array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
-    );
+    // $payments = array (
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
+    // );
 
    $icon = <<< ICON
-       <a class="fs-5 text-decoration-none" title="See">
+       <a class="fs-5 text-decoration-none" title="See" data-toggle="modal" data-target=".bd-example-modal-sm">
             <i class="fa fa-eye" aria-hidden="true"></i>
        </a>
     ICON;
 ?>
 
             <?php
+                include './breif-php/conndb.php';
+                
                 include './breif-php/head.php';
                 include './breif-php/sidebar.php'; 
                 include './breif-php/header.php';
@@ -52,20 +54,35 @@
                                 </thead>
                                 <tbody class="fs-6">
                                         <?php  
-                                            foreach ($payments as $payment) :
+
+                                        $sql = "SELECT * FROM paye";
+                                        $result = mysqli_query($conn, $sql);
+                                        
+                                        if($result) {
+                                            while($row = mysqli_fetch_assoc($result)){ 
+                                                $name    = $row['name'];
+                                                $paye    = $row['payement'];
+                                                $number  = $row['number'];
+                                                $amount  = $row['amount'];
+                                                $balance = $row['balance'];
+                                                $date    = $row['datepay'];
                                         ?> 
 
                                     <tr class="bg-withe">
-                                        <td class="align-middle"><?php echo $payment ['Name']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Schedule']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Number']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['paid']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['amount']; ?></td>
-                                        <td class="align-middle"><?php echo $payment ['Date']; ?></td>
-                                        <td class="align-middle"><?php echo $icon ?></td>
+                                        <td class="align-middle"><?php echo $row ['name']; ?></td>
+                                        <td class="align-middle"><?php echo $row ['payement']; ?></td>
+                                        <td class="align-middle"><?php echo $row ['number']; ?></td>
+                                        <td class="align-middle"><?php echo $row ['amount']; ?></td>
+                                        <td class="align-middle"><?php echo $row ['balance']; ?></td>
+                                        <td class="align-middle"><?php echo $row ['datepay']; ?></td>
+                                        <td class="align-middle">
+                                            <a class="fs-5 text-decoration-none" title="See">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a></td>
                                     </tr> 
                                     
-                                    <?php  endforeach;?>
+                                    <?php  }
+                                    };?>
                                     
                                 </tbody>
                             </table>
@@ -75,7 +92,7 @@
             </div>
         </div>
     </div>
-
+    
     <?php
         include './breif-php/footre.php';
    ?>
