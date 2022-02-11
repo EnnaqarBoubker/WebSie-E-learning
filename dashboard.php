@@ -1,11 +1,9 @@
 <?php
 
     include './breif-php/head.php';
+    
 
-?>
 
-
-            <?php 
                 include 'breif-php/sidebar.php'; 
                 include 'breif-php/header.php';
             ?>
@@ -40,7 +38,7 @@
                                     <p class="text-info">Payments</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><span class="fs-5 fw-bold">DHS</span> 556,000</p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><span class="fs-5 fw-bold">DHS </span>555,000</p>
                                 </div>
                             </div>
                         </li>
