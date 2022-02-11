@@ -1,7 +1,21 @@
 <?php
 
     include './breif-php/head.php';
+    // connected db
     
+    include './breif-php/conndb.php';
+    //students
+        $sql ="SELECT COUNT(id) as numberofStu FROM student_a";
+        $res = mysqli_query($conn, $sql);
+        $row1= mysqli_fetch_array($res);
+    //cours
+        $sql ="SELECT COUNT(id) numberOfCours FROM cours";
+        $res = mysqli_query($conn, $sql);
+        $row2= mysqli_fetch_array($res);
+    //payement
+        $sql ="SELECT SUM(amount) FROM paye";
+        $res = mysqli_query($conn, $sql);
+        $row3= mysqli_fetch_array($res);
 
 
                 include 'breif-php/sidebar.php'; 
@@ -16,7 +30,7 @@
                                     <p class="text-info">Students</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 ">243</p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><?php echo $row1[0]; ?></p>
                                 </div>
                             </div>
                         </li>
@@ -27,7 +41,7 @@
                                     <p class="text-info">Course</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 ">13</p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><?php echo $row2[0]; ?></p>
                                 </div>
                             </div>
                         </li>
@@ -38,7 +52,7 @@
                                     <p class="text-info">Payments</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><span class="fs-5 fw-bold">DHS </span>555,000</p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><span class="fs-5 fw-bold">DHS </span><?php echo $row3[0]; ?></p>
                                 </div>
                             </div>
                         </li>
