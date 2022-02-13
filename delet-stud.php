@@ -1,15 +1,21 @@
 <?php
-    $index = $_GET['index'];
+    include './breif-php/conndb.php';
 
-    $data = file_get_contents('student.json');
-    $data = json_decode($data, true);
+    if(isset($_GET['id'])){
 
-    unset($data[$index]);
-    sort($data);
+        $id = $_GET['id'];
+        $sql = "DELETE FROM student_a WHERE id = $id";
 
-    //encode back to json
-	$data = json_encode($data, JSON_PRETTY_PRINT);
-	file_put_contents('student.json', $data);
+        $result = mysqli_query($conn,$sql);
 
-	header('location: student.php');
+        if($result){
+            // echo "Record deleted succesfully";
+             header('location: student.php');
+        }
+        else{
+            die(mysqli_error($conn));
+        }
+    }
+    // header('location: read.php');
+
 ?>
