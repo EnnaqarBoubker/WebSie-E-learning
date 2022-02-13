@@ -9,7 +9,7 @@
         $res = mysqli_query($conn, $sql);
         $row1= mysqli_fetch_array($res);
     //cours
-        $sql ="SELECT COUNT(id) numberOfCours FROM cours";
+        $sql ="SELECT COUNT(id) as numberOfCours FROM cours";
         $res = mysqli_query($conn, $sql);
         $row2= mysqli_fetch_array($res);
     //payement
