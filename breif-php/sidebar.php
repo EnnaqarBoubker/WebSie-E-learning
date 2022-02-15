@@ -1,7 +1,6 @@
-<?php 
-
-    $sidebar = <<< SIDEBAR
-            
+<?php
+    
+    $sidebar = <<<SIDE
             <body>
             <main>
                 <div class="container-fluid">
@@ -18,52 +17,60 @@
                         <a class="pb-3 text-decoration-none fs-6" href="#">Admin</a>
                     </div>
                     <ul class="w-100 nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
-                        <li class="w-100 text-center">
-                            <a href="./dashboard.php" class="selected nav-link align-middle px-0">
+                        <li class="w-100 text-center active">
+                            <a href="./dashboard.php" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-home" aria-hidden="true"></i> 
                                 <span class="ms-1 d-none d-sm-inline ps-2">Home</span>
                             </a>
                         </li>
                         <li class="w-100 text-center">
-                            <a href="#" class="selected nav-link px-0 align-middle">
+                            <a href="#" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                                 <span class="ms-1 d-none d-sm-inline ps-3">Course</span>
                             </a>
                         </li>
-                        <li class="w-100 text-center">
-                            <a href="./student.php" class="selected nav-link px-0 align-middle">
+                        <li class="w-100 text-center ">
+                            <a href="./student.php" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                 <span class="ms-1 d-none d-sm-inline ps-1">Students</span></a>
                         </li>
                         <li class="w-100 text-center">
-                            <a href="./payment.php" class="selected nav-link px-0 align-middle ">
+                            <a href="./payment.php" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-money" aria-hidden="true"></i> 
                                 <span class="ms-1 d-none d-sm-inline ps-2">Payment</span>
                             </a>
                         </li>
-                        <li class="w-100 text-center">
-                            <a href="#" class="selected nav-link px-0 align-middle">
+                        <li class="w-100 text-cente">
+                            <a href="#" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-flag" aria-hidden="true"></i> 
                                 <span class="ms-1 d-none d-sm-inline ps-2">Report</span>
                             </a>
                         </li>
-                        <li class="w-100 text-center">
-                            <a href="#" class="selected nav-link px-2 p-sm-0 align-middle">
+                        <li class="w-100 text-center ">
+                            <a href="#" class="nav nav-link align-middle px-0 text-dark  fs-9 ps-sm-4 py-2 rounded-1 ">
                                 <i class="fa fa-cogs" aria-hidden="true"></i> 
                                 <span class="ms-1 d-none d-sm-inline ps-2">Settings</span> </a>
                         </li>
                     </ul>
                     <hr>
                     <div class="w-100 text-center">
-                        <a href="./index.php" class="selected nav-link px-2 p-sm-0 align-middle">
+                        <a href="./index.php" class=" nav-link px-2 p-sm-0 align-middle">
                             <span class="me-2 d-none d-sm-inline ps-2">Logout</span> 
                             <i class="fa fa-sign-out" aria-hidden="true"></i> 
                         </a>
                     </div>
                 </div>
             </div>
-            SIDEBAR;
-        
-        echo $sidebar;
+            SIDE;
+
+            echo $sidebar;
+
+       
     
-        ?>
+?>
+ <script>
+     $(".nav .nav-link").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).addClass("active");
+    });
+ </script>

@@ -94,10 +94,6 @@
   min-height: 90vh !important;
 }
 /* sidebare */
-.selected {
-  
-  border-radius: 8px;
-}
-.selected:active {
+.nav .nav-link .active{
   background: #00c1fe;
 }

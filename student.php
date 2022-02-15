@@ -18,10 +18,18 @@
         IMAGE;
 
                 //connect db in php page
+                $home = "";
+                $cours = "";
+                $students = "";
+                $payement = "";
+                $report = "";
+                $settings = "";
                 include './breif-php/conndb.php';
                 
                 include './breif-php/head.php';
+                
                 include './breif-php/sidebar.php'; 
+
                 include './breif-php/header.php';
 ?>
 
@@ -70,35 +78,35 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                      <div class="modal-header">
-                                         <form method="POST" class="form-group w-100">
+                                         <form method="POST" class="form-group w-100" enctype="multipart/form-data">
                                                     
                                                 <div class="form-outline">
                                                     <label class="form-label">User name</label>
-                                                    <input type="text" class="form-control form-group" name="name"/>
+                                                    <input type="text" class="form-control form-group" name="name" required/>
                                                     
                                                 </div>
 
                                                 <div class="form-outline">
                                                     <label class="form-label">E-mail</label>
-                                                    <input type="email" class="form-control form-group" name="e_mail"/>
+                                                    <input type="email" class="form-control form-group" name="e_mail" required/>
                                                     
                                                 </div>
 
                                                 <div class="form-outline">
                                                     <label class="form-label">Phone</label>
-                                                    <input type="text" class="form-control form-group" name="phone"/>
+                                                    <input type="text" class="form-control form-group" name="phone" required/>
                                                     
                                                 </div>
 
                                                 <div class="form-outline">
                                                     <label class="form-label">Enroll Number</label>
-                                                    <input type="text" class="form-control form-group" name="enroll_number"/>
+                                                    <input type="text" class="form-control form-group" name="enroll_number" required/>
                                                     
                                                 </div>
 
                                                 <div class="form-outline mb-3">
                                                     <label class="form-label">Date of admission</label>
-                                                    <input type="date" class="form-control form-group" name="DateOfAdmission"/>
+                                                    <input type="date" class="form-control form-group" name="DateOfAdmission" required/>
                                                     
                                                 </div>
 
@@ -138,13 +146,8 @@
 
                                         $result = mysqli_query($conn, $sql);
 
-                                        if($result) {
-                                            while($row = mysqli_fetch_array($result)){ 
-                                                $name            = $row['name'];
-                                                $mail            = $row['e_mail'];
-                                                $phone           = $row['phone'];
-                                                $enroll_Number   = $row['enroll_number'];
-                                                $DateOfAdmission = $row['DateOfAdmission'];
+                                            while($row = mysqli_fetch_array($result)) {
+                                            // foreach($result as $row) {    
                                     ?> 
 
                                 <tr class="bg-withe">
@@ -160,9 +163,7 @@
                                     </td>
                                 </tr> 
                                 
-                                <?php  }
-                                }
-                                ?>
+                                <?php  }; ?>
 
                                 </tbody>
                             </table>

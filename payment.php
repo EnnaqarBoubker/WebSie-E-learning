@@ -11,6 +11,13 @@
     //     array('Name' => 'Usename', 'Schedule' => 'First', 'Number' => '00012223', 'paid' => 'DHS 100,000', 'amount' => 'DHS 500,000', 'Date' => '05-Jan, 2022'),
     // );
 
+    $home = "";
+    $cours = "";
+    $students = "";
+    $payement = "acitve";
+    $report = "";
+    $settings = "";
+
    $icon = <<< ICON
        <a class="fs-5 text-decoration-none" title="See" data-toggle="modal" data-target=".bd-example-modal-sm">
             <i class="fa fa-eye" aria-hidden="true"></i>
