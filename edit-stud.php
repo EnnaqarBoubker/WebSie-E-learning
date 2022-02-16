@@ -30,8 +30,6 @@
         else{
             die(mysqli_error($conn));
         }
-
-   
     }
 
     include './breif-php/head.php';

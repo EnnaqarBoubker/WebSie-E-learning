@@ -54,6 +54,73 @@
 
                         <!-- creat add student popup in page student -->
                         <?php
+
+                        // //-----------------------------------------
+                        // //define var and set to empty values
+                        // $nameErr = $mailErr = $phoneErr = $enroll_nErr = $admissionErr = "";
+                        // $name = $mail = $phone = $enroll_n = $admission = "";
+
+                        
+                        // if($_SERVER["REQUEST_METHOD"] == "POST"){
+                        //     $name      = test_input($_POST["name"]);
+                        //     $mail      = test_input($_POST["e_mail"]);
+                        //     $phone     = test_input($_POST["phone"]);
+                        //     $enroll_n  = test_input($_POST["enroll_number"]);
+                        //     $admission = test_input($_POST["DateOfAdmission"]);
+                        // }
+
+                        // function test_input($data) {
+                        //     $data = trim($data);
+                        //     $data = stripslashes($data);
+                        //     $data = htmlspecialchars($data);
+                        //     return $data;
+                        //   }
+
+                        //   if($_SERVER['REQUEST_METHOD'] == "POST"){
+                        //       //Name
+                        //       if(empty($_POST["name"])){
+                        //           $nameErr = "Please enter a valid name";
+                        //       }
+                        //       else{
+                        //           $name = Test_input($_POST["name"]);
+                        //           if(!preg_match("/^[a-zA-Z-']*$/" ,$name)){
+                        //               $nameErr = "Only letrs and white spaces allowed";
+                        //            }
+                        //        }
+                        //       // E_mail
+                        //        if(empty($_POST["e_mail"])){
+                        //         $mailErr = "Please enter a valid e_mail";
+                        //         }
+                        //         else{
+                        //             $mail = Test_input($_POST["e_mail"]);
+                        //         }
+                        //         // Phone
+                        //         if(empty($_POST["phone"])){
+                        //             $mailErr = "Please enter a valid phone";
+                        //         }
+                        //         else{
+                        //             $mail = Test_input($_POST["phone"]);
+                        //         }
+                        //         //Enroll number
+                        //         if(empty($_POST["enroll_number"])){
+                        //             $mailErr = "Please enter a valid enroll_number";
+                        //             }
+                        //         else{
+                        //             $mail = Test_input($_POST["enroll_number"]);
+                        //         }
+                        //         // Date of admission
+                        //         if(empty($_POST["DateOfAdmission"])){
+                        //             $mailErr = "Please enter a valid DateOfAdmission";
+                        //         }
+                        //         else{
+                        //             $mail = Test_input($_POST["DateOfAdmission"]);
+                        //         }
+
+                                
+                        //    }
+
+
+                        // //-----------------------------------------
                                 if (isset($_POST['save'])) {
 
                                     $name            = $_POST['name'];
@@ -78,7 +145,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                      <div class="modal-header">
-                                         <form method="POST" class="form-group w-100" enctype="multipart/form-data">
+                                         <form method="POST" class="form-group w-100" action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
                                                     
                                                 <div class="form-outline">
                                                     <label class="form-label">User name</label>
