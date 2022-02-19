@@ -1,11 +1,16 @@
 <?php
+  session_start();
+  if(!$_SESSION['email']){
+       header('location:index.php') ;
+  }
 
     include './breif-php/head.php';
+    $title = "dashboard";
     // connected db
     
     include './breif-php/conndb.php';
     //students
-        $sql ="SELECT COUNT(id) as numberofStu FROM student_a";
+        $sql ="SELECT COUNT(id) as 'number of students' FROM student_a";
         $res = mysqli_query($conn, $sql);
         $row1= mysqli_fetch_array($res);
     //cours
@@ -13,14 +18,14 @@
         $res = mysqli_query($conn, $sql);
         $row2= mysqli_fetch_array($res);
     //payement
-        $sql ="SELECT SUM(amount) FROM paye";
+        $sql ="SELECT SUM(amount) FROM paye";   
         $res = mysqli_query($conn, $sql);
         $row3= mysqli_fetch_array($res);
 
 
                 include 'breif-php/sidebar.php'; 
                 include 'breif-php/header.php';
-            ?>
+?>
 
                     <ul class="row list-unstyled mt-2 mt-lg-4 d-flex justify-content-evenly">
                         <li class=" mb-2 col-md-6 mb-md-2 col-lg-3">
@@ -52,7 +57,7 @@
                                     <p class="text-info">Payments</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><span class="fs-5 fw-bold">DHS </span><?php echo $row3[0]; ?></p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><?php echo $row3[0]; ?><span class="fs-5 fw-bold"> DHS</span></p>
                                 </div>
                             </div>
                         </li>

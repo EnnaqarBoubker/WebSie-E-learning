@@ -1,27 +1,74 @@
 <?php
-   $emailErr = $passErr = '';
-   $partener = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$";
-  //  $errors = array('email'=> '', 'password' => '' );
+session_start();
 
-   if(isset($_POST['submit'])){
- 
-    if(empty($_POST['email'])){
-      $emailErr = "Please enter a email";
-    }
-    else{
-      $email = $_POST['email'];
-      
-      if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $emailErr = "Please enter a valid email";
+    include './breif-php/conndb.php';
+
+   $emailErr = $passErr = '';
+   $email = $password = "";
+   $partener = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/";
+
+   //validation email and password
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){ // mnin acseder page bi methode post
+  //  if(isset($_POST['submit'])){
+      if(empty($_POST['email'])){     // condition pour rendre le champ obligatoire. empty validation du valeur
+        $emailErr = "Please enter a email";
       }
-    }
-    if(empty($_POST['password'])){
-      $passErr = "enter password";
+      else{
+        $email = $_POST['email'];
+        
+        if(!preg_match($partener, $email)){
+     // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+          $emailErr = "Please enter a valid email";
+        }
+      }
+      if(empty($_POST['password'])){
+
+        $passErr = "enter password";
+      }
+      else{
+        $password = $_POST['password'];
+      }
+  }
+
+    //validation login pour aviter des script XSS and ajouter des cookies and session.
+
+    $email =  mysqli_real_escape_string($conn, $email);
+    $Password = mysqli_real_escape_string($conn, $password);
+
+    $sql = "SELECT * FROM comptes where e_mail = '$email' AND  passwordUse = '$password'";
+
+    $result = mysqli_query($conn, $sql);
+
+    //if result matched $email and $password table row must be 1 row,
+
+    // $count = mysqli_num_rows($result);
+    $row = mysqli_fetch_assoc($result);
+    
+
+    if($row > 0){
+      
+
+      $_SESSION['name']=$row['Name'];
+      $_SESSION['email']=$_POST['email'];
+      $_SESSION['password']=$_POST['password'];
+     
+      
+        //cookies
+        if(!empty($_POST['checked'])){
+          //cookies
+          setcookie('email', $email, time() + 500);
+          setcookie('password', $password, time() + 500);
+          }
+          
+          header('location: dashboard.php');
+        
+       
     }
     // else{
-    //   echo "valide";
+    //   echo "error";
     // }
-    }
+
     include './breif-php/head.php';
 ?>
 
@@ -35,22 +82,27 @@
                         <h2>SIGN IN</h2>
                         <p class="text-secondary">Enter your credentials to access your account</p>
                     </div>
+                    <!-- <div class="alert alert-danger" role="alert">
+                         <?php //if($email && $password === 1){ -->
+                          // echo "enter your emain and password" ;
+                        //};?>
+                    </div> -->
                     <div class="mb-3">
-                        <label for="mail" class="form-label">Email <span class="etoil">*</span></label>
-                        <input type="email" class="form-control" id="mail" placeholder="Enter your email" name="email"  value="">
+                        <label for="mail" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="mail" placeholder="Enter your email" name="email"  value="<?php if(isset($_COOKIE['email'])){echo $_COOKIE['email'] ; } ?>">
                         <span class="text-danger"><?php echo $emailErr ?></span>
                     </div>
                     <div class="mb-3">
-                        <label for="password1" class="form-label">Password <span class="etoil">*</span></label>
-                        <input type="password" class="form-control" id="password1" placeholder="Enter your password" name="password" >
+                        <label for="password1" class="form-label">Password <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" id="password1" placeholder="Enter your password" name="password" value="<?php if(isset($_COOKIE['password'])){echo $_COOKIE['password'] ;}?>">
                         <span class="text-danger"><?php echo $passErr ?></span>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="Check1">
+                        <input type="checkbox" class="form-check-input" name="checked" id="Check1">
                         <label class="form-check-label" for="Check1">remember me</label>
                     </div>
 
-                    <input class="btn btn-lg btn-info w-100 text-white" type="submit" name="submit" value="Envoyer">
+                    <input class="btn btn-lg btn-info w-100 text-white" type="submit" name="submit" value="Sign In">
 
                     <p class="text-center fs-6 pt-3">Forgot your password? <a href="#">Reset Password</a></p>
                 </form>
