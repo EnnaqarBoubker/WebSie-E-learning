@@ -14,24 +14,6 @@
         $enroll_n        = $row['enroll_number'];
         $admission       = $row['DateOfAdmission'];
 
-   if(isset($_POST['save'])){
-        $name            = $_POST['name'];
-        $mail            = $_POST['e_mail'];
-        $phone           = $_POST['phone'];
-        $enroll_n        = $_POST['enroll_number'];
-        $admission       = $_POST['DateOfAdmission'];
-
-        $sql = "UPDATE student_a SET name = '$name', e_mail = '$mail', phone = '$phone', enroll_number = '$enroll_n', DateOfAdmission = '$admission' WHERE id = '$id'"; 
-   
-        $resulet = mysqli_query($conn, $sql);
-        if($resulet){
-            header("location: student.php");
-        }
-        else{
-            die(mysqli_error($conn));
-        }
-    }
-
     include './breif-php/head.php';
 
 ?>
@@ -73,4 +55,27 @@
         </form>
     </div>
 
-<?php include './breif-php/footre.php';?>
+<?php
+        if(isset($_POST['save'])){
+            $name            = $_POST['name'];
+            $mail            = $_POST['e_mail'];
+            $phone           = $_POST['phone'];
+            $enroll_n        = $_POST['enroll_number'];
+            $admission       = $_POST['DateOfAdmission'];
+    
+            $sql = "UPDATE student_a SET name = '$name', e_mail = '$mail', phone = '$phone', enroll_number = '$enroll_n', DateOfAdmission = '$admission' WHERE id = '$id'"; 
+       
+            $resulet = mysqli_query($conn, $sql);
+            
+
+            if($resulet){
+                header("location: student.php");
+            }
+            else{
+                die(mysqli_error($conn));
+            }
+        }
+        
+        include './breif-php/footre.php';
+        
+?>

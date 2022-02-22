@@ -1,4 +1,5 @@
 <?php
+
   session_start();
   if(!$_SESSION['email']){
        header('location:index.php') ;
@@ -21,7 +22,7 @@
         $sql ="SELECT SUM(amount) FROM paye";   
         $res = mysqli_query($conn, $sql);
         $row3= mysqli_fetch_array($res);
-
+        
 
                 include 'breif-php/sidebar.php'; 
                 include 'breif-php/header.php';

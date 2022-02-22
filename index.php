@@ -33,8 +33,9 @@ session_start();
 
     //validation login pour aviter des script XSS and ajouter des cookies and session.
 
-    $email =  mysqli_real_escape_string($conn, $email);
-    $Password = mysqli_real_escape_string($conn, $password);
+    
+    // $email    =  mysqli_real_escape_string($conn, $email);
+    // $Password =  mysqli_real_escape_string($conn, $password);
 
     $sql = "SELECT * FROM comptes where e_mail = '$email' AND  passwordUse = '$password'";
 
@@ -47,13 +48,13 @@ session_start();
     
 
     if($row > 0){
-      
 
+      
+      
       $_SESSION['name']=$row['Name'];
       $_SESSION['email']=$_POST['email'];
       $_SESSION['password']=$_POST['password'];
      
-      
         //cookies
         if(!empty($_POST['checked'])){
           //cookies
@@ -62,17 +63,27 @@ session_start();
           }
           
           header('location: dashboard.php');
-        
-       
     }
-    // else{
-    //   echo "error";
-    // }
+
+    function cookie() {
+      if(isset($_COOKIE['email']))
+        {
+          echo $_COOKIE['email'] ; 
+        }
+      };
+
+      function cookieA() {
+        if(isset($_COOKIE['password']))
+          {
+            echo $_COOKIE['password'] ; 
+          }
+        }
 
     include './breif-php/head.php';
 ?>
 
 <body>
+  <main>
     <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center">
         <div class="rounded-3 bg-white p-4 col-lg-4 col-md-6 col-sm-7 ">
             <div class="row">
@@ -82,19 +93,14 @@ session_start();
                         <h2>SIGN IN</h2>
                         <p class="text-secondary">Enter your credentials to access your account</p>
                     </div>
-                    <!-- <div class="alert alert-danger" role="alert">
-                         <?php //if($email && $password === 1){ -->
-                          // echo "enter your emain and password" ;
-                        //};?>
-                    </div> -->
                     <div class="mb-3">
                         <label for="mail" class="form-label">Email <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="mail" placeholder="Enter your email" name="email"  value="<?php if(isset($_COOKIE['email'])){echo $_COOKIE['email'] ; } ?>">
+                        <input type="text" class="form-control" id="mail" placeholder="Enter your email" name="email"  value="<?php cookie(); ?>">
                         <span class="text-danger"><?php echo $emailErr ?></span>
                     </div>
                     <div class="mb-3">
                         <label for="password1" class="form-label">Password <span class="text-danger">*</span></label>
-                        <input type="password" class="form-control" id="password1" placeholder="Enter your password" name="password" value="<?php if(isset($_COOKIE['password'])){echo $_COOKIE['password'] ;}?>">
+                        <input type="password" class="form-control" id="password1" placeholder="Enter your password" name="password" value="<?php cookieA()?>">
                         <span class="text-danger"><?php echo $passErr ?></span>
                     </div>
                     <div class="mb-3 form-check">
@@ -115,3 +121,4 @@ session_start();
    <?php
         include './breif-php/footre.php';
    ?>
+   

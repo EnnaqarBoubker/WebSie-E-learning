@@ -1,38 +1,22 @@
-<?php
-    // $students = array (
-    //     array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Ahemed' , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Sabir'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Taib'   , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Maher'  , 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    //     array('Name' => 'Usename', 'E-mail' => 'user@email.com', 'Phone' => '00012223', 'Number' => '1234567305477760', 'admission' => '08-Dec, 2021'),
-    // );
-
-        
-        
+<?php 
     $image = <<<IMAGE
         <img class="w-50 rounded-1" src="./image/youcode.png" alt="user">
         IMAGE;
 
-                //connect db in php page
                 $home = "";
                 $cours = "";
-                $students = "";
+                $student = "selected";
                 $payement = "";
                 $report = "";
                 $settings = "";
+                
+                //connect db in php page
                 include './breif-php/conndb.php';
                 
                 include './breif-php/head.php';
-                
                 include './breif-php/sidebar.php'; 
-
                 include './breif-php/header.php';
 ?>
-
 
                 <div class="container mt-3 bg-withe">
                     <div class="row">
@@ -54,73 +38,7 @@
 
                         <!-- creat add student popup in page student -->
                         <?php
-
-                        // //-----------------------------------------
-                        // //define var and set to empty values
-                        // $nameErr = $mailErr = $phoneErr = $enroll_nErr = $admissionErr = "";
-                        // $name = $mail = $phone = $enroll_n = $admission = "";
-
                         
-                        // if($_SERVER["REQUEST_METHOD"] == "POST"){
-                        //     $name      = test_input($_POST["name"]);
-                        //     $mail      = test_input($_POST["e_mail"]);
-                        //     $phone     = test_input($_POST["phone"]);
-                        //     $enroll_n  = test_input($_POST["enroll_number"]);
-                        //     $admission = test_input($_POST["DateOfAdmission"]);
-                        // }
-
-                        // function test_input($data) {
-                        //     $data = trim($data);
-                        //     $data = stripslashes($data);
-                        //     $data = htmlspecialchars($data);
-                        //     return $data;
-                        //   }
-
-                        //   if($_SERVER['REQUEST_METHOD'] == "POST"){
-                        //       //Name
-                        //       if(empty($_POST["name"])){
-                        //           $nameErr = "Please enter a valid name";
-                        //       }
-                        //       else{
-                        //           $name = Test_input($_POST["name"]);
-                        //           if(!preg_match("/^[a-zA-Z-']*$/" ,$name)){
-                        //               $nameErr = "Only letrs and white spaces allowed";
-                        //            }
-                        //        }
-                        //       // E_mail
-                        //        if(empty($_POST["e_mail"])){
-                        //         $mailErr = "Please enter a valid e_mail";
-                        //         }
-                        //         else{
-                        //             $mail = Test_input($_POST["e_mail"]);
-                        //         }
-                        //         // Phone
-                        //         if(empty($_POST["phone"])){
-                        //             $mailErr = "Please enter a valid phone";
-                        //         }
-                        //         else{
-                        //             $mail = Test_input($_POST["phone"]);
-                        //         }
-                        //         //Enroll number
-                        //         if(empty($_POST["enroll_number"])){
-                        //             $mailErr = "Please enter a valid enroll_number";
-                        //             }
-                        //         else{
-                        //             $mail = Test_input($_POST["enroll_number"]);
-                        //         }
-                        //         // Date of admission
-                        //         if(empty($_POST["DateOfAdmission"])){
-                        //             $mailErr = "Please enter a valid DateOfAdmission";
-                        //         }
-                        //         else{
-                        //             $mail = Test_input($_POST["DateOfAdmission"]);
-                        //         }
-
-                                
-                        //    }
-
-
-                        // //-----------------------------------------
                                 if (isset($_POST['save'])) {
 
                                     $name            = $_POST['name'];
@@ -130,7 +48,7 @@
                                     $admission       = $_POST['DateOfAdmission'];
                     
                                     $sql = "INSERT INTO student_a (name, e_mail, phone, enroll_number, DateOfAdmission ) VALUES ('$name', '$mail', '$phone', '$enroll_n', '$admission')";
-                    
+                                        //return resultat du requete
                                     $result = mysqli_query($conn, $sql);
                     
                     
@@ -202,10 +120,6 @@
                                 <tbody class="fs-6">
 
                                     <?php 
-
-                                        // $students = file_get_contents("student.json");
-                                        // $students = json_decode($students, true);
-
 
                                         // READ DB with CRUD
                                         
