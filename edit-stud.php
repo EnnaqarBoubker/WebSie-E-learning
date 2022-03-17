@@ -1,4 +1,8 @@
 <?php 
+ session_start();
+ if(!$_SESSION['email']){
+      header('location:index.php') ;
+ }
    include './breif-php/conndb.php';
 
    $id = $_GET['id'];
@@ -23,7 +27,7 @@
            <a href="./student.php" class="my-4 btn btn-primary btn-create p-2">BACk</a>
             
                 
-            <div class="form-outline">
+            <div class="form-outline"h>
                 <label class="form-label">User name</label>
                 <input type="text" class="form-control" name="name" value="<?php echo $row['name']; ?>"/>
                 

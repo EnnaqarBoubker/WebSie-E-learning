@@ -21,10 +21,10 @@
                         <a class="pb-3 text-decoration-none fs-6" href="#">Admin</a>
                     </div>
                     <ul class="w-100 nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
-                        <li class="w-100 text-start active">
+                        <li class="w-100 text-start <?php echo ($page == "home" ? "bubker" : "")?>">
                             <a href="./dashboard.php" class="nav nav-link align-middle px-0 text-dark fs-9 ps-sm-4 py-2 rounded-1 <?php $home; ?>">
                                 <i class="fa fa-home" aria-hidden="true"></i> 
-                                <span class="ms-1 d-none d-sm-inline ps-2">Home</span>
+                                <span class="ms-1 d-none d-sm-inline ps-2 ">Home</span>
                             </a>
                         </li>
                         <li class="w-100 text-start">

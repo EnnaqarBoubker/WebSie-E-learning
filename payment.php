@@ -1,4 +1,9 @@
 <?php
+
+session_start();
+if(!$_SESSION['email']){
+     header('location:index.php') ;
+}
                 include './breif-php/conndb.php';
                 
                 include './breif-php/head.php';

@@ -1,14 +1,18 @@
 <?php 
+ session_start();
+ if(!$_SESSION['email']){
+      header('location:index.php') ;
+ }
     $image = <<<IMAGE
         <img class="w-50 rounded-1" src="./image/youcode.png" alt="user">
         IMAGE;
 
-                $home = "";
-                $cours = "";
-                $student = "selected";
-                $payement = "";
-                $report = "";
-                $settings = "";
+                // $home = "";
+                // $cours = "";
+                // $student = "selected";
+                // $payement = "";
+                // $report = "";
+                // $settings = "";
                 
                 //connect db in php page
                 include './breif-php/conndb.php';
