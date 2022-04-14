@@ -22,6 +22,10 @@ $page = 'bubker';
         $sql ="SELECT SUM(amount) FROM paye";   
         $res = mysqli_query($conn, $sql);
         $row3= mysqli_fetch_array($res);
+    //users
+        $sql ="SELECT COUNT(id) as 'number of users' FROM comptes";
+        $res = mysqli_query($conn, $sql);
+        $row3= mysqli_fetch_array($res);
         
 
                 include 'breif-php/sidebar.php'; 
@@ -69,7 +73,7 @@ $page = 'bubker';
                                     <p class="text-info">Users</p>
                                 </div>
                                 <div class="p-O d-flex justify-content-end">
-                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 ">3</p>
+                                    <p class="mt-0 mt-lg-3 mb-0 fw-bolder fs-4 "><?php echo $row3[0]; ?></p>
                                 </div>
                             </div>
                         </li>

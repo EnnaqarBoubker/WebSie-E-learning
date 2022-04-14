@@ -7,5 +7,5 @@ session_unset();
 // destroy the session
 session_destroy();
 
-header('location: sighin.php');
+header('location: index.php');
 ?>
