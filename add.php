@@ -9,7 +9,7 @@
                             $enroll_n        = $_POST['enroll_number'];
                             $admission       = $_POST['DateOfAdmission'];
             
-                            $sql = "INSERT INTO student_a (name, e_mail, phone, enroll_number, DateOfAdmission ) VALUES ('$name', '$mail', '$phone', '$enroll_n', '$admission')";
+                            $sql = "INSERT INTO student (name, e_mail, phone, enroll_number, DateOfAdmission ) VALUES ('$name', '$mail', '$phone', '$enroll_n', '$admission')";
                                 //return resultat du requete
                             $result = mysqli_query($conn, $sql);
             

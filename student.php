@@ -51,7 +51,7 @@
                                     $enroll_n        = $_POST['enroll_number'];
                                     $admission       = $_POST['DateOfAdmission'];
                     
-                                    $sql = "INSERT INTO student_a (name, e_mail, phone, enroll_number, DateOfAdmission ) VALUES ('$name', '$mail', '$phone', '$enroll_n', '$admission')";
+                                    $sql = "INSERT INTO student (name, e_mail, phone, enroll_number, DateOfAdmission ) VALUES ('$name', '$mail', '$phone', '$enroll_n', '$admission')";
                                         //return resultat du requete
                                     $result = mysqli_query($conn, $sql);
                     
@@ -108,7 +108,7 @@
                         <!-- end creat add student popup in page student -->
 
 
-                        <div class="height table-responsive">
+                        <!-- <div class="height table-responsive">
                             <table class="table table-borderless">
                                 <thead class=" text-color fs-6 fw-normal">
                                     <tr>
@@ -152,6 +152,32 @@
 
                                 </tbody>
                             </table>
+                        </div> -->
+
+                        <div class="d-flex flex-wrap">
+                        <?php 
+
+                            // READ DB with CRUD
+
+                            $sql = "SELECT * FROM student_a"; //var dans un requte
+
+                            $result = mysqli_query($conn, $sql);
+
+                                while($row = mysqli_fetch_array($result)) {
+                                // foreach($result as $row) {    
+                        ?> 
+
+                            <div class="card" style="width: 18rem;">
+                            <?php echo $image ?>
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $row['name']; ?></h5>
+                                <p class="card-text"><?php echo $row['e_mail']; ?></p>
+                            </div>
+                            </div>
+
+
+                        <?php  }; ?>
+
                         </div>
                     </div>
                 </div>

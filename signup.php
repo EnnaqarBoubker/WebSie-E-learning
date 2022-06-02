@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="mb-3 form-controle">
                         <label for="mail" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email" value=""<?php echo "$email" ?>">
+                        <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email" value="<?php echo "$email" ?>">
                         <small class="error"></small>
                     </div>
                     <div class="mb-3 form-controle">
@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
         </div>
     </div>
 
-<script src="main.js"></script>
+<!-- <script src="main.js"></script> -->
 
 
    <?php

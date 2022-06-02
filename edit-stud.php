@@ -7,7 +7,7 @@
 
    $id = $_GET['id'];
 
-   $sql = "SELECT * FROM student_a WHERE id = $id";
+   $sql = "SELECT * FROM student WHERE id = $id";
 
    $resulet = mysqli_query($conn, $sql);
 
@@ -67,7 +67,7 @@
             $enroll_n        = $_POST['enroll_number'];
             $admission       = $_POST['DateOfAdmission'];
     
-            $sql = "UPDATE student_a SET name = '$name', e_mail = '$mail', phone = '$phone', enroll_number = '$enroll_n', DateOfAdmission = '$admission' WHERE id = '$id'"; 
+            $sql = "UPDATE student SET name = '$name', e_mail = '$mail', phone = '$phone', enroll_number = '$enroll_n', DateOfAdmission = '$admission' WHERE id = '$id'"; 
        
             $resulet = mysqli_query($conn, $sql);
             
